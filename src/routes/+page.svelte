@@ -1,5 +1,28 @@
 <script>
-	let titles = ["a developer", "a systems architect", "a creative thinker", "an innovator"];
+	import github from '$lib/images/github-mark-white.svg';
+	import linkedin from '$lib/images/linkedin-rounded-svgrepo-com.svg';
+	import email from '$lib/images/envelope-fill-svgrepo-com.svg'
+
+	let titles = [
+		"a fullstack developer",
+		"a database architect",
+		"a problem solver",
+		"a cloud enthusiast",
+		"a data scientist",
+		"a cybersecurity expert",
+		"a machine learning aficionado",
+		"an open source contributor",
+		"a UX/UI designer",
+		"a systems architect",
+		"a DevOps specialist",
+		"an IoT innovator",
+		"a network architect",
+		"a blockchain developer",
+		"a software engineer",
+		"an AI researcher",
+		"a digital nomad",
+		"a startup enthusiast"
+	];
 	let currentTitle = "";
 	let index = 0;
 	let subIndex = 0;
@@ -27,6 +50,30 @@
 	typeWriter();
 </script>
 
+<svelte:head>
+	<title>Wesley</title>
+	<meta name="description" content="Wesley's personal website" />
+</svelte:head>
+
+<section class="container">
+	<div class="title">
+		>Wesley is <span>{currentTitle}</span><span class="cursor"></span>
+	</div>
+
+	<div class="coming-soon">
+		<p>More coming soon!</p>
+		<a href="https://github.com/wesaka/svelte-personal-website" target="_blank">
+			<img src={github} alt="Github Link" />
+		</a>
+		<a href="https://linkedin.com/in/wesaka" target="_blank">
+			<img src={linkedin} alt="Linkedin Link"/>
+		</a>
+		<a href="mailto:connect@wesley.com.es">
+			<img src={email} alt="Send me an email!"/>
+		</a>
+	</div>
+</section>
+
 <style>
 	@media screen and (max-width: 600px) {
 		.title {
@@ -44,9 +91,11 @@
 
 	.title {
 		font-family: ErbosDracoRegularOpen, monospace;
-		font-size: xxx-large;
+		font-size: xx-large;
 		margin-left: 10vw;
 		margin-top: 40vh;
+		word-wrap: break-word;
+		word-break: break-word;
 	}
 
 	.cursor {
@@ -68,6 +117,7 @@
 	.coming-soon {
 		text-align: center;
 		font-size: larger;
+		margin-bottom: 15vh;
 	}
 
 	.coming-soon img {
@@ -77,43 +127,4 @@
 		padding-right: 10px;
 	}
 
-	.footer {
-		margin-bottom: 10px;
-		text-align: center;
-		font-size: 0.8em;
-	}
-
-	.attribution {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.svelte-logo {
-		height: 1em;
-		margin-right: 5px;
-	}
 </style>
-
-<div class="container">
-	<main>
-		<div class="title">
-			>Wesley is <span>{currentTitle}</span><span class="cursor"></span>
-		</div>
-	</main>
-
-	<div class="coming-soon">
-		<p>More coming soon!</p>
-		<a href="https://github.com/wesaka/svelte-personal-website" target="_blank"><img src="/github-mark-white.svg" alt="GitHub Link"/></a>
-		<a href="https://linkedin.com/in/wesaka" target="_blank"><img src="/linkedin-rounded-svgrepo-com.svg" alt="Linkedin Link"/></a>
-		<a href="mailto:connect@wesley.com.es"><img src="/envelope-fill-svgrepo-com.svg" alt="Send me an email!"/></a>
-	</div>
-
-	<div class="footer">
-		<div class="attribution">
-			<img src="/svelte-svgrepo-com.svg" alt="Svelte Logo" class="svelte-logo" />
-			<span>Built with Svelte |</span>
-			<a href="/attribution-link"> Attributions</a>
-		</div>
-	</div>
-</div>
