@@ -98,13 +98,13 @@
 <div class="container">
 	<main>
 		<div class="title">
-			Wesley is <span>{currentTitle}</span><span class="cursor"></span>
+			>Wesley is <span>{currentTitle}</span><span class="cursor"></span>
 		</div>
 	</main>
 
 	<div class="coming-soon">
 		<p>More coming soon!</p>
-		<a href="https://github.com/wesaka" target="_blank"><img src="/github-mark-white.svg" alt="GitHub Link"/></a>
+		<a href="https://github.com/wesaka/svelte-personal-website" target="_blank"><img src="/github-mark-white.svg" alt="GitHub Link"/></a>
 		<a href="https://linkedin.com/in/wesaka" target="_blank"><img src="/linkedin-rounded-svgrepo-com.svg" alt="Linkedin Link"/></a>
 		<a href="mailto:connect@wesley.com.es"><img src="/envelope-fill-svgrepo-com.svg" alt="Send me an email!"/></a>
 	</div>
